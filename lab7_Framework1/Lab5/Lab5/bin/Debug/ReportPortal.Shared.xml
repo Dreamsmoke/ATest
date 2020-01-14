@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReportPortal.Shared</name>
+    </assembly>
+    <members>
+        <member name="M:ReportPortal.Shared.Bridge.LogMessage(ReportPortal.Client.Models.LogLevel,System.String)">
+            <summary>
+            Deprecated. Please use <see cref="T:ReportPortal.Shared.Log"/> class to put your logs.
+            </summary>
+        </member>
+        <member name="T:ReportPortal.Shared.Configuration.Configuration">
+            <inheritdoc />
+        </member>
+        <member name="P:ReportPortal.Shared.Configuration.Configuration.Values">
+            <inheritdoc />
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.Configuration.GetValue``1(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.Configuration.GetValue``1(System.String,``0)">
+            <inheritdoc />
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.Configuration.GetValues``1(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.Configuration.GetValues``1(System.String,System.Collections.Generic.IEnumerable{``0})">
+            <inheritdoc />
+        </member>
+        <member name="T:ReportPortal.Shared.Configuration.ConfigurationBuilder">
+            <inheritdoc />
+        </member>
+        <member name="P:ReportPortal.Shared.Configuration.ConfigurationBuilder.Providers">
+            <inheritdoc />
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.ConfigurationBuilder.Add(ReportPortal.Shared.Configuration.IConfigurationProvider)">
+            <inheritdoc />
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.ConfigurationBuilder.Build">
+            <inheritdoc />
+        </member>
+        <member name="T:ReportPortal.Shared.Configuration.ConfigurationPath">
+            <summary>
+            Stores well known configuration property names.
+            </summary>
+        </member>
+        <member name="T:ReportPortal.Shared.Configuration.IConfiguration">
+            <summary>
+            Stores configuration variables from different providers.
+            </summary>
+        </member>
+        <member name="P:ReportPortal.Shared.Configuration.IConfiguration.Values">
+            <summary>
+            Fethed configuration variables.
+            </summary>
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.IConfiguration.GetValue``1(System.String)">
+            <summary>
+            Returns value of configuration property.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.IConfiguration.GetValue``1(System.String,``0)">
+            <summary>
+            Returns value of configuration property.
+            </summary>
+            <param name="property"></param>
+            <param name="defaultValue"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.IConfiguration.GetValues``1(System.String)">
+            <summary>
+            Returns value of configuration property.
+            </summary>
+            <param name="property"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.IConfiguration.GetValues``1(System.String,System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Returns value of configuration property.
+            </summary>
+            <param name="property"></param>
+            <param name="defaultValue"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:ReportPortal.Shared.Configuration.IConfigurationBuilder">
+            <summary>
+            Builds <see cref="T:ReportPortal.Shared.Configuration.IConfiguration"/> instance to retrieve configuration variables from different providers.
+            </summary>
+        </member>
+        <member name="P:ReportPortal.Shared.Configuration.IConfigurationBuilder.Providers">
+            <summary>
+            Gets registered providers.
+            </summary>
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.IConfigurationBuilder.Add(ReportPortal.Shared.Configuration.IConfigurationProvider)">
+            <summary>
+            Register provider to be considered as configuration source.
+            </summary>
+            <param name="provider"></param>
+            <returns>The same <see cref="T:ReportPortal.Shared.Configuration.IConfigurationBuilder"/> instance.</returns>
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.IConfigurationBuilder.Build">
+            <summary>
+            Asks all providers to fetch configuration variables from a source.
+            </summary>
+            <returns>Configuration instance with fethed configuration variables.</returns>
+        </member>
+        <member name="T:ReportPortal.Shared.Configuration.IConfigurationProvider">
+            <summary>
+            Provides a way to retrieve configuration variables.
+            </summary>
+        </member>
+        <member name="P:ReportPortal.Shared.Configuration.IConfigurationProvider.Properties">
+            <summary>
+            Returns fetched configuration variables.
+            </summary>
+        </member>
+        <member name="M:ReportPortal.Shared.Configuration.IConfigurationProvider.Load">
+            <summary>
+            Fethes configuration variables.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ReportPortal.Shared.ContextInfo.LaunchReporter">
+            <summary>
+            Current reporter to send results.
+            </summary>
+        </member>
+        <member name="T:ReportPortal.Shared.Extensibility.ILogHandler">
+            <summary>
+            Handle all incoming log messages to <see cref="M:ReportPortal.Shared.Bridge.LogMessage(ReportPortal.Client.Models.LogLevel,System.String)"/>. Usually from log frameworks.
+            </summary>
+        </member>
+        <member name="T:ReportPortal.Shared.Internal.Logging.ITraceLogger">
+            <summary>
+            Interface to write internal log messages to file
+            </summary>
+        </member>
+        <member name="M:ReportPortal.Shared.Internal.Logging.ITraceLogger.Info(System.String)">
+            <summary>
+            Writes log message with "Info" level.
+            </summary>
+            <param name="message">Your internal log message</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Internal.Logging.ITraceLogger.Verbose(System.String)">
+            <summary>
+            Writes log message with "Verbose" level.
+            </summary>
+            <param name="message">Your internal log message</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Internal.Logging.ITraceLogger.Warn(System.String)">
+            <summary>
+            Writes log message with "Warning" level.
+            </summary>
+            <param name="message">Your internal log message</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Internal.Logging.ITraceLogger.Error(System.String)">
+            <summary>
+            Writes log message with "Error" level.
+            </summary>
+            <param name="message">Your internal log message</param>
+        </member>
+        <member name="T:ReportPortal.Shared.Internal.Logging.TraceLogger">
+            <inheritdoc/>
+        </member>
+        <member name="T:ReportPortal.Shared.Internal.Logging.TraceLogManager">
+            <summary>
+            Class to manage all internal loggers.
+            </summary>
+        </member>
+        <member name="M:ReportPortal.Shared.Internal.Logging.TraceLogManager.GetLogger(System.Type)">
+            <summary>
+            Gets or creates new logger for requested type.
+            </summary>
+            <param name="type">Type where logger should be registered for</param>
+            <returns><see cref="T:ReportPortal.Shared.Internal.Logging.ITraceLogger"/> instance for logging internal messages</returns>
+        </member>
+        <member name="M:ReportPortal.Shared.Internal.Logging.TraceLogManager.GetLogger``1">
+            <summary>
+            Gets or creates new logger for requested type.
+            </summary>
+            <typeparam name="T">Type where logger should be registered for</typeparam>
+            <returns><see cref="T:ReportPortal.Shared.Internal.Logging.ITraceLogger"/> instance for logging internal messages</returns>
+        </member>
+        <member name="T:ReportPortal.Shared.Log">
+            <summary>
+            Attach artifacts to current test context like textual messages or binary files.
+            </summary>
+            <example>
+            Usage:
+            - sends simple message
+            <code>Log.Info("simple message")</code>
+            - send image to report
+            <code>Log.Debug("my screenshot", "image/png", File.ReadAllBytes(file_path))</code>
+            </example>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Message(ReportPortal.Client.Requests.AddLogItemRequest)">
+            <summary>
+            Sends log message to current test context.
+            </summary>
+            <param name="logRequest">Full model object for message</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Info(System.String)">
+            <summary>
+            Sends log message with "Info" level to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Info(System.String,System.String,System.Byte[])">
+            <summary>
+            Sends binary content to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+            <param name="mimeType">Mime type of content</param>
+            <param name="content">Array of bytes</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Debug(System.String)">
+            <summary>
+            Sends log message with "Debug" level to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Debug(System.String,System.String,System.Byte[])">
+            <summary>
+            Sends binary content to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+            <param name="mimeType">Mime type of content</param>
+            <param name="content">Array of bytes</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Trace(System.String)">
+            <summary>
+            Sends log message with "Trace" level to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Trace(System.String,System.String,System.Byte[])">
+            <summary>
+            Sends binary content to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+            <param name="mimeType">Mime type of content</param>
+            <param name="content">Array of bytes</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Error(System.String)">
+            <summary>
+            Sends log message with "Error" level to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Error(System.String,System.String,System.Byte[])">
+            <summary>
+            Sends binary content to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+            <param name="mimeType">Mime type of content</param>
+            <param name="content">Array of bytes</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Fatal(System.String)">
+            <summary>
+            Sends log message with "Fatal" level to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Fatal(System.String,System.String,System.Byte[])">
+            <summary>
+            Sends binary content to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+            <param name="mimeType">Mime type of content</param>
+            <param name="content">Array of bytes</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Warn(System.String)">
+            <summary>
+            Sends log message with "Warn" level to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+        </member>
+        <member name="M:ReportPortal.Shared.Log.Warn(System.String,System.String,System.Byte[])">
+            <summary>
+            Sends binary content to current test context.
+            </summary>
+            <param name="message">Text of the message</param>
+            <param name="mimeType">Mime type of content</param>
+            <param name="content">Array of bytes</param>
+        </member>
+    </members>
+</doc>

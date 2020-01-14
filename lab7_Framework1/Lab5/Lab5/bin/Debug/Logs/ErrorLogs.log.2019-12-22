@@ -1,0 +1,204 @@
+2019-12-22 20:19:06,671 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 47 but was 44. Strings differ at index 6.
+  Expected: "Error:\\\\r\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  ------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 60
+2019-12-22 20:29:01,762 15 ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 47 but was 44. Strings differ at index 6.
+  Expected: "Error:\\\\r\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  ------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:11:08,491 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 50 but was 44. Strings differ at index 6.
+  Expected: "Error:\\\\\\\\r\\\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  ------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:12:25,440 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 47 but was 44. Strings differ at index 6.
+  Expected: "Error:\\\\r\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  ------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:13:38,866 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - OpenQA.Selenium.NoSuchElementException: Could not find element by: By.CssSelector: .sb-searchbox__error.-visible
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.get_Text()
+   at Lab5.Page.StartPage.ErrorMessageSearch() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Page\StartPage.cs:line 42
+   at Lab5.Steps.Steps.SearchIncorrectCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 43
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:24:01,542 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 46 but was 44. Strings differ at index 6.
+  Expected: "Error:\\r\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  ------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:24:58,168 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 48 but was 44. Strings differ at index 6.
+  Expected: "Error:\\\\r\\\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  ------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:27:09,328 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - OpenQA.Selenium.NoSuchElementException: Could not find element by: By.Id: ss
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.SendKeys(String text)
+   at Lab5.Page.StartPage.Searching(String city) in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Page\StartPage.cs:line 36
+   at Lab5.Steps.Steps.SearchingError(String incorrect_city) in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 37
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 57
+2019-12-22 21:27:35,353 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 50 but was 44. Strings differ at index 6.
+  Expected: "Error:/\\\\r/\\\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  -----------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:28:11,211 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 52 but was 44. Strings differ at index 6.
+  Expected: "Error://\\\\r//\\\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  -----------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:28:44,845 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 46 but was 44. Strings differ at index 6.
+  Expected: "Error:/r/nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  -----------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:29:26,191 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - OpenQA.Selenium.NoSuchElementException: Could not find element by: By.CssSelector: .sb-searchbox__error.-visible
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.get_Text()
+   at Lab5.Page.StartPage.ErrorMessageSearch() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Page\StartPage.cs:line 42
+   at Lab5.Steps.Steps.SearchIncorrectCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 43
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:29:54,154 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 46 but was 44. Strings differ at index 6.
+  Expected: "Error:\\r\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  ------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:33:10,689 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   String lengths are both 44. Strings differ at index 6.
+  Expected: "Error:rnSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  -----------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 21:59:38,550 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   String lengths are both 44. Strings differ at index 6.
+  Expected: "Error:rnSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  -----------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 22:02:05,819 15 ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - OpenQA.Selenium.NoSuchElementException: Could not find element by: By.CssSelector: .sb-searchbox__error.-visible
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.get_Text()
+   at Lab5.Page.StartPage.ErrorMessageSearch() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Page\StartPage.cs:line 42
+   at Lab5.Steps.Steps.SearchIncorrectCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 43
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 22:06:17,369 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   String lengths are both 44. Strings differ at index 6.
+  Expected: "Error:rnSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  -----------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 22:31:21,679 16 ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 46 but was 44. Strings differ at index 6.
+  Expected: "Error:\\r\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  ------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 22:32:39,212 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   String lengths are both 44. Strings differ at index 6.
+  Expected: "Error:rnSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  -----------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 58
+2019-12-22 22:38:02,694 NonParallelWorker ERROR Lab5.Tests.SmokeTests OneCanLoginBooking - OpenQA.Selenium.NoSuchElementException: Could not find element by: By.Id: password
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.SendKeys(String text)
+   at Lab5.Page.LoginPage.Login(String username, String password) in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Page\LoginPage.cs:line 51
+   at Lab5.Steps.Steps.LoginBooking(String username, String password) in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 24
+   at Lab5.Tests.SmokeTests.OneCanLoginBooking() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 38
+2019-12-22 22:38:46,467 NonParallelWorker ERROR Lab5.Tests.SmokeTests OneCanLoginBooking - OpenQA.Selenium.NoSuchElementException: Could not find element by: By.Id: password
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.SendKeys(String text)
+   at Lab5.Page.LoginPage.Login(String username, String password) in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Page\LoginPage.cs:line 51
+   at Lab5.Steps.Steps.LoginBooking(String username, String password) in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 24
+   at Lab5.Tests.SmokeTests.OneCanLoginBooking() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 38

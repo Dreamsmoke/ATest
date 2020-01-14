@@ -1,0 +1,19 @@
+2019-12-20 12:24:25,028 16 ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - NUnit.Framework.AssertionException:   Expected string length 46 but was 44. Strings differ at index 6.
+  Expected: "Error:\\r\\nSorry, we don't recognize that name."
+  But was:  "Error:\r\nSorry, we don't recognize that name."
+  ------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in D:\a\1\s\src\NUnitFramework\framework\Assert.That.cs:line 240
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 60
+2019-12-20 12:26:04,670 15 ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - OpenQA.Selenium.NoSuchElementException: Could not find element by: By.CssSelector: .sb-searchbox__error.-visible
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.get_Text()
+   at Lab5.Page.StartPage.ErrorMessageSearch() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Page\StartPage.cs:line 42
+   at Lab5.Steps.Steps.SearchIncorrectCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 43
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 60

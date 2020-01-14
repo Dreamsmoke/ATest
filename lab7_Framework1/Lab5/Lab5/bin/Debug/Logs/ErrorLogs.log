@@ -1,0 +1,78 @@
+2019-12-27 02:52:41,390 NonParallelWorker ERROR Lab5.Tests.SmokeTests OneCanLoginBooking - OpenQA.Selenium.WebDriverException: Unexpected error. System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:63545
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.set_Url(String value)
+   at OpenQA.Selenium.Remote.RemoteNavigator.GoToUrl(String url)
+   at Lab5.Page.LoginPage.OpenPage() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Page\LoginPage.cs:line 42
+   at Lab5.Steps.Steps.LoginBooking(String username, String password) in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 23
+   at Lab5.Tests.SmokeTests.OneCanLoginBooking() in D:\Univer\Test\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 41
+2019-12-27 10:55:19,787 NonParallelWorker ERROR Lab5.Tests.SmokeTests OneCanLoginBooking - OpenQA.Selenium.NoSuchElementException: Could not find element by: By.Id: email
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.GetAttribute(String attributeName)
+   at Lab5.Page.LoginPage.GetLoggedInUserName() in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Page\LoginPage.cs:line 57
+   at Lab5.Steps.Steps.GetLoggedInUserName() in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 30
+   at Lab5.Tests.SmokeTests.OneCanLoginBooking() in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 42
+2019-12-27 11:02:09,776 NonParallelWorker ERROR Lab5.Tests.SmokeTests OneCanLoginBooking - System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <a class="mc-hd__account-btn js-hd-dropdown-cur" id="account_order">...</a> is not clickable at point (1444, 71). Other element would receive the click: <div class="pop-cell">...</div>
+  (Session info: chrome=79.0.3945.88)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Click()
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at OpenQA.Selenium.Support.PageObjects.WebDriverObjectProxy.InvokeMethod(IMethodCallMessage msg, Object representedValue)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at Lab5.Page.LoginPage.Login(String username, String password) in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Page\LoginPage.cs:line 50
+   at Lab5.Steps.Steps.LoginBooking(String username, String password) in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 24
+   at Lab5.Tests.SmokeTests.OneCanLoginBooking() in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 41
+2019-12-27 11:02:43,332 15 ERROR Lab5.Tests.SmokeTests OneCanLoginBooking - System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <a class="mc-hd__account-btn js-hd-dropdown-cur" id="account_order">...</a> is not clickable at point (1444, 71). Other element would receive the click: <div class="pop-cell">...</div>
+  (Session info: chrome=79.0.3945.88)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Click()
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at OpenQA.Selenium.Support.PageObjects.WebDriverObjectProxy.InvokeMethod(IMethodCallMessage msg, Object representedValue)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at Lab5.Page.LoginPage.Login(String username, String password) in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Page\LoginPage.cs:line 50
+   at Lab5.Steps.Steps.LoginBooking(String username, String password) in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 24
+   at Lab5.Tests.SmokeTests.OneCanLoginBooking() in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 41
+2019-12-27 12:06:15,769 NonParallelWorker ERROR Lab5.Tests.SmokeTests EnterIncorrecCity - OpenQA.Selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=79.0.3945.88)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementById(String id)
+   at OpenQA.Selenium.By.<>c__DisplayClass16_0.<Id>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.SendKeys(String text)
+   at Lab5.Page.StartPage.Searching(String city) in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Page\StartPage.cs:line 33
+   at Lab5.Steps.Steps.SearchingError(String incorrect_city) in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Steps\Steps.cs:line 37
+   at Lab5.Tests.SmokeTests.EnterIncorrecCity() in D:\Univer\Test\Kate\lab7_Framework1\Lab5\Lab5\Tests\SmokeTests.cs:line 62
